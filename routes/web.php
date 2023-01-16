@@ -28,3 +28,9 @@ Route::get('/riwayat', function () {
     return view('admin.riwayat');
 });
 
+Route::get('/riwayat', function () {
+    return view('admin.riwayat');
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
